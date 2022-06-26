@@ -1,0 +1,35 @@
+{
+    "schemaVersion": 1,
+    "id": "satenet",
+    "version": "${version}",
+    "name": "SateNet",
+    "description": "A Minecraft mod that provides facilities generating wireless power coverage",
+    "authors": [
+        "MUYU_Twilighter",
+        "dongzhuo375",
+        "StrangeSmell"
+    ],
+    "contact": {
+        "website": "https://github.com/MUYUTwilighter/SateNet",
+        "repo": "null"
+    },
+    "license": "MIT",
+    "icon": "assets/satenet/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "client": [
+            "cool.muyucloud.satenet.client.SateNetClient"
+        ],
+        "main": [
+            "cool.muyucloud.satenet.SateNet"
+        ]
+    },
+    "mixins": [
+        "satenet.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.14.8",
+        "fabric": "*",
+        "minecraft": "1.19"
+    }
+}
