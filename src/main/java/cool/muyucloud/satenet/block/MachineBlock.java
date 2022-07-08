@@ -5,7 +5,6 @@ import net.minecraft.block.AbstractBlock;
 
 public abstract class MachineBlock extends AbstractBlock {
     private int maxConsumeRate;
-    private PowerNet powerNet;
 
     private MachineBlock(Settings settings) {
         super(settings);

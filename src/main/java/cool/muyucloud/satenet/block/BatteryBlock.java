@@ -4,9 +4,10 @@ public abstract class BatteryBlock extends MachineBlock {
     private int maxSupplyRate;
     private int capacity;
 
-    public BatteryBlock(Settings settings, int maxConsumeRate, int maxSupplyRate) {
+    public BatteryBlock(Settings settings, int maxConsumeRate, int capacity) {
         super(settings, maxConsumeRate);
         this.maxSupplyRate = maxSupplyRate;
+        this.capacity = capacity;
     }
 
     public int getMaxSupplyRate() {
